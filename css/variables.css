@@ -1,0 +1,67 @@
+:root {
+  --color-bg: black;
+  --color-text: white;
+  --color-text-light: rgba(255, 255, 255, 0.9);
+  --color-link: rgb(255, 255, 255);
+
+  --font-family: "Switzer", sans-serif;
+
+  --cursor-default: url("../assets/cursors/cursor_white.svg"), auto;
+  --cursor-pointer: url("../assets/cursors/cursor_select_white.svg"), pointer;
+
+  --cursor-default-light: url("../assets/cursors/cursor_black.svg"), auto;
+  --cursor-pointer-light: url("../assets/cursors/cursor_select_black.svg"), pointer;
+
+  --transition-hover: 0.5s ease;
+  --transition-section: 0.5s ease;
+
+  --perspective: 800px;
+
+  --container-width: 60vw;
+  --container-padding: 4vw;
+
+  --font-hero-name: 5vw;
+  --font-hero-desc: 1vw;
+  --font-section-title: 3.5vw;
+  --font-body: 1.1vw;
+  --font-small: 0.85vw;
+  --font-tiny: 0.8vw;
+  --font-repo-name: 1.4vw;
+  --font-repo-desc: 0.55vw;
+  --font-repo-bottom: 0.55vw;
+
+  --line-hero-name: 8vh;
+  --line-hero-desc: 3vh;
+  --line-body: 1.6;
+
+  --hero-height: 50vh;
+  --header-height: 10vh;
+  --green-bar-height: 10vh;
+  --orange-height: 50vh;
+  --projects-height: 80vh;
+  --div-bar-height: 5vh;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container-width: 100%;
+    --font-hero-name: 8vw;
+    --font-hero-desc: 4vw;
+    --font-section-title: 6vw;
+    --font-body: 2.8vw;
+    --font-small: 2.5vw;
+    --font-tiny: 2.5vw;
+    --font-repo-name: 4vw;
+    --font-repo-desc: 2.2vw;
+    --font-repo-bottom: 2vw;
+
+    --line-hero-name: 1.2;
+    --line-hero-desc: 1.4;
+
+    --hero-height: auto;
+    --header-height: 8vh;
+    --green-bar-height: 8vh;
+    --orange-height: auto;
+    --projects-height: auto;
+  }
+}
