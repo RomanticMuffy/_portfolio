@@ -24,11 +24,11 @@ document.querySelector('._btn_theme').addEventListener('click', function() {
     Shell: '#89e051'
   };
 
-  fetch('https://api.github.com/users/RomanticMuffy/repos?sort=updated&per_page=5&type=source')
+  fetch('https://api.github.com/users/gustavoCobello/repos?sort=updated&per_page=5&type=source')
     .then(function(r) { return r.json(); })
     .then(function(repos) {
       var filtered = repos.filter(function(r) {
-        return r.name !== 'RomanticMuffy';
+        return r.name !== 'gustavoCobello';
       });
       var top3 = filtered.slice(0, 3);
 
