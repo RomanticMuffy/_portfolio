@@ -43,12 +43,7 @@ body {
 }
 
 body._light {
-  background-color: white;
   cursor: var(--cursor-default-light);
-}
-
-body._light ._wrap_page {
-  background-color: white;
 }
 
 body._light img {
@@ -59,24 +54,15 @@ body._light ._hero_content::before {
   filter: invert(1);
 }
 
-body._light ._hero_title,
-body._light ._hero_sub,
-body._light ._title_section,
-body._light ._text_about,
-body._light ._text_skill,
-body._light ._location,
-body._light ._label_repos,
-body._light ._footer,
-body._light ._repo_card a,
-body._light ._repo_name,
-body._light ._repo_desc,
-body._light ._link_social,
-body._light ._popup_email,
 body._light ._popup {
   background: #eee;
 }
 
 body._light ._popup_close {
+  color: black;
+}
+
+body._light ._popup_email {
   color: black;
 }
 
