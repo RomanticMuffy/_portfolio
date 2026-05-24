@@ -53,3 +53,34 @@ document.querySelector('._btn_theme').addEventListener('click', function() {
     })
     .catch(function() {});
 })();
+
+(function() {
+  var emailBtn = document.getElementById('emailBtn');
+  var popup = document.getElementById('emailPopup');
+  var closeBtn = document.getElementById('popupClose');
+  var copyBtn = document.getElementById('popupCopy');
+
+  emailBtn.addEventListener('click', function() {
+    popup.classList.add('_active');
+  });
+
+  function closePopup() {
+    popup.classList.remove('_active');
+    copyBtn.textContent = 'copiar e-mail';
+  }
+
+  closeBtn.addEventListener('click', closePopup);
+
+  popup.addEventListener('click', function(e) {
+    if (e.target === popup) closePopup();
+  });
+
+  copyBtn.addEventListener('click', function() {
+    navigator.clipboard.writeText('kaxxaraboy@proton.me').then(function() {
+      copyBtn.textContent = 'copiado!';
+      setTimeout(function() {
+        copyBtn.textContent = 'copiar e-mail';
+      }, 1500);
+    });
+  });
+})();
