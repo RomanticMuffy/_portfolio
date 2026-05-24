@@ -69,8 +69,25 @@ body._light ._label_repos,
 body._light ._footer,
 body._light ._repo_card a,
 body._light ._repo_name,
-body._light ._repo_desc {
+body._light ._repo_desc,
+body._light ._link_social,
+body._light ._popup_email,
+body._light ._popup {
+  background: #eee;
+}
+
+body._light ._popup_close {
   color: black;
+}
+
+body._light ._popup_copy {
+  border-color: black;
+  color: black;
+}
+
+body._light ._popup_copy:hover {
+  background: black;
+  color: white;
 }
 
 body._light a,
